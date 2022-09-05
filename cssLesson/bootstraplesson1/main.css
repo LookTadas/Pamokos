@@ -1,0 +1,32 @@
+.row > * {
+    border: 1px solid;
+    text-align: center;
+}
+
+.color1 > * {
+    background-color:skyblue;
+}
+
+.color2 > * {
+    background-color:violet;
+}
+
+.color3 > * {
+    background-color:green;
+}
+
+.color4 > * {
+    background-color:red;
+}
+
+.color5 > * {
+    background-color: yellow;
+}
+
+.color6 > * {
+    background-color:lightblue;
+}
+
+.color7 > * {
+    background-color:lightgreen;
+}
