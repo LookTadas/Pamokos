@@ -159,3 +159,25 @@ if(randomNumber4 == randomNumber5){
     }
 
 };
+
+console.log("------------------4 užduotis---------------------")
+
+let A = (Math.ceil(Math.random() * 10));
+let B = (Math.ceil(Math.random() * 10));
+let C = (Math.ceil(Math.random() * 10));
+let P = ((A + B + C)/2)
+let S = (Math.sqrt(P*(P-A)*(P-B)*(P-C)))
+
+let true1 = "true1";
+let true2 = "true2";
+let true3 = "true3";
+let negative = "negative"
+
+if ((A + B > C) && (A + C > B) && (B + C > A)){
+    console.log(Math.round(S));
+}
+else{
+    console.log("Trikampio pastatyti neįmanoma!!!")
+}
+
+
