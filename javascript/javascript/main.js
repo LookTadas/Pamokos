@@ -174,10 +174,103 @@ let true3 = "true3";
 let negative = "negative"
 
 if ((A + B > C) && (A + C > B) && (B + C > A)){
-    console.log(Math.round(S));
+    console.log(((Math.round((S)*100)) / 100));
 }
 else{
     console.log("Trikampio pastatyti neįmanoma!!!")
 }
 
+console.log("------------------5 užduotis---------------------")
 
+
+let randomizer1 = (Math.round(Math.random() * 2));
+let randomizer2 = (Math.round(Math.random() * 2));
+let randomizer3 = (Math.round(Math.random() * 2));
+let randomizer4 = (Math.round(Math.random() * 2));
+
+let nulis1 = 0
+let vienas1 = 0
+let du1 = 0
+let nulis2 = 0
+let vienas2 = 0
+let du2 = 0
+let nulis3 = 0
+let vienas3 = 0
+let du3 =0
+let nulis4 = 0
+let vienas4 = 0
+let du4 = 0
+
+// let counter1 = 
+
+if((randomizer1 == 0)){
+    
+    nulis1 = 1;
+
+}
+
+else if(randomizer1 == 1){
+
+    vienas1 = 1;
+
+}
+else{
+
+    du1 = 1;
+
+};
+
+if((randomizer2 == 0)){
+    
+    nulis2 = 1;
+
+}
+
+else if(randomizer2 == 1){
+
+    vienas2 = 1;
+
+}
+else{
+
+    du2 = 1;
+
+};
+
+if((randomizer3 == 0)){
+    
+    nulis3 = 1;
+
+}
+
+else if(randomizer3 == 1){
+
+    vienas3 = 1;
+
+}
+else{
+
+    du3 = 1;
+
+};
+
+if((randomizer4 == 0)){
+    
+    nulis4 = 1;
+
+}
+
+else if(randomizer4 == 1){
+
+    vienas4 = 1;
+
+}
+else{
+
+    du4 = 1;
+
+};
+
+console.log("nuliai - " + (nulis1 + nulis2 + nulis3 + nulis4));
+console.log("vienetai - " + (vienas1 + vienas2 + vienas3 + nulis4));
+console.log("dvejetai - " + (du1 + du2 + du3 + du4));
