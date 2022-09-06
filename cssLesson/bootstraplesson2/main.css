@@ -1,0 +1,17 @@
+.container {
+    height: 500px;
+    width: 500px;
+    margin-left: calc((100% - 800px) / 2);
+    background
+}
+
+.container > * {
+    text-align: center;
+}
+
+.row {
+    background-color: blue;
+    height: 10px;
+    width: 10px;
+}
+
