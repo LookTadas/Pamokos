@@ -55,7 +55,7 @@ else {
 };
 
 console.log("-----------3 užduotis----------------");
-
+// pataisyti
 let randomNumber3 = (Math.floor(Math.random() * 25));
 let randomNumber4 = (Math.floor(Math.random() * 25));
 let randomNumber5 = (Math.floor(Math.random() * 25));
@@ -74,70 +74,71 @@ if (randomNumber3 < randomNumber5) {
     if (randomNumber5 < randomNumber4) {
         console.log(randomNumber5);
     }
-};
+}
 
 if (randomNumber4 < randomNumber3) {
     if (randomNumber3 < randomNumber5) {
         console.log(randomNumber3);
     }
-};
+}
 
 if (randomNumber4 < randomNumber5) {
     if (randomNumber5 < randomNumber3) {
         console.log(randomNumber5);
 
-    };
+    }
 
     if (randomNumber5 < randomNumber4) {
         if (randomNumber4 < randomNumber3) {
             console.log(randomNumber4);
         }
-    };
+    }
 
     if (randomNumber5 < randomNumber3) {
         if (randomNumber3 < randomNumber4) {
             console.log(randomNumber3);
         }
-    };
+    }
 
     if (randomNumber3 == randomNumber4) {
         if (randomNumber5 < randomNumber3) {
             console.log(randomNumber4);
         }
-    };
+    }
 
     if (randomNumber3 == randomNumber5) {
         if (randomNumber4 < randomNumber3) {
             console.log(randomNumber3);
         }
-    };
+    }
 
     if (randomNumber4 == randomNumber5) {
         if (randomNumber3 < randomNumber4) {
             console.log(randomNumber4);
         }
-    };
+    }
 
     if (randomNumber3 == randomNumber4) {
         if (randomNumber5 > randomNumber3) {
             console.log(randomNumber4);
         }
-    };
+    }
 
     if (randomNumber3 == randomNumber5) {
         if (randomNumber4 > randomNumber3) {
             console.log(randomNumber3);
         }
-    };
+    }
 
     if (randomNumber4 == randomNumber5)
         if (randomNumber3 > randomNumber4) {
             console.log(randomNumber4);
         }
-};
+}
 
 console.log("------------------4 užduotis---------------------")
 
+// pataisyti su Math.round, nes math.ceil gali būti nulis.
 let A = (Math.ceil(Math.random() * 10));
 let B = (Math.ceil(Math.random() * 10));
 let C = (Math.ceil(Math.random() * 10));
@@ -164,18 +165,18 @@ let randomizer2 = (Math.round(Math.random() * 2));
 let randomizer3 = (Math.round(Math.random() * 2));
 let randomizer4 = (Math.round(Math.random() * 2));
 
-let nulis1 = 0
-let vienas1 = 0
-let du1 = 0
-let nulis2 = 0
-let vienas2 = 0
-let du2 = 0
-let nulis3 = 0
-let vienas3 = 0
-let du3 = 0
-let nulis4 = 0
-let vienas4 = 0
-let du4 = 0
+let nulis1 = 0;
+let vienas1 = 0;
+let du1 = 0;
+let nulis2 = 0;
+let vienas2 = 0;
+let du2 = 0;
+let nulis3 = 0;
+let vienas3 = 0;
+let du3 = 0;
+let nulis4 = 0;
+let vienas4 = 0;
+let du4 = 0;
 
 // let counter1 = 
 
@@ -233,6 +234,10 @@ let rnd1 = (Math.round(Math.random() * 20) - 10);
 let rnd2 = (Math.round(Math.random() * 20) - 10);
 let rnd3 = (Math.round(Math.random() * 20) - 10);
 
+
+// rnd1 = 0;
+// rnd2 = -1;
+// rnd3 = 10;
 // console.log(rnd1);
 
 if ((rnd1 > 0)) {
@@ -284,9 +289,9 @@ else if (kaina >= 2000) {
 
 console.log("---------------------------------8 užduotis----------------------------")
 
-let kintamasis1 = ((Math.round(Math.random() * 100)));
-let kintamasis2 = ((Math.round(Math.random() * 100)));
-let kintamasis3 = ((Math.round(Math.random() * 100)));
+let kintamasis1 = (1+(Math.round(Math.random() * 100)));
+let kintamasis2 = (1+(Math.round(Math.random() * 100)));
+let kintamasis3 = (1+(Math.round(Math.random() * 100)));
 
 let sk1 = 0;
 let sk2 = 0;
@@ -347,7 +352,12 @@ let vidurkis = ((kintamasis1 + kintamasis2 + kintamasis3) / 3);
 let vidurkis2 = ((kintamasis4 + kintamasis5 + kintamasis6) / (sk1 + sk2 + sk3));
 
 console.log(Math.round(vidurkis));
-console.log(Math.round(vidurkis2));
+if((kintamasis4 + kintamasis5 + kintamasis6) != 0 && (sk1 + sk2 + sk3) != 0){
+    console.log(Math.round(vidurkis2));
+}else{
+    console.log("Vidurkio apskaičiuoti negalima!!!");
+}
+
 
 
 console.log("----------------------papildoma 1---------------------------")
@@ -361,7 +371,7 @@ let minFormat = (mins < 10 ? "0" : "")
 let secsFormat = (secs < 10 ? "0" : "")
 console.log(String(hrsFormat + hrs + ":" + minFormat + mins + ":" + secsFormat + secs));
 
-plius = Math.round(Math.random() * 300)
+plius = Math.round(Math.random() * 300);
 minutesPlius = Math.floor (plius / 60);
 secsPlius = plius - (minutesPlius * 60);
 
@@ -428,9 +438,6 @@ else if(rng3>rng4 && rng3>rng5 && rng3>rng6 && rng3>rng1 && rng3>rng2){
 else if(rng2>rng3 && rng2>rng4 && rng2>rng5 && rng2>rng6 && rng2>rng1){
     notRng1 = rng2;
 }
-else{
-
-}
 // --------------------------------2------------------------------
 if(rng1>rng2 && rng1>rng3 && rng1>rng4 && rng1>rng5 && rng1<rng6){
     notRng2 = rng1;
@@ -449,9 +456,6 @@ else if(rng3>rng4 && rng3>rng5 && rng3>rng6 && rng3>rng1 && rng3<rng2){
 }
 else if(rng2>rng3 && rng2>rng4 && rng2>rng5 && rng2>rng6 && rng2<rng1){
     notRng2 = rng2;
-}
-else{
-
 }
  // ------------------------------3--------------------------------   
  if(rng1>rng2 && rng1>rng3 && rng1>rng4 && rng1<rng5 && rng1<rng6){
@@ -472,9 +476,6 @@ else if(rng3>rng4 && rng3>rng5 && rng3>rng6 && rng3<rng1 && rng3<rng2){
 else if(rng2>rng3 && rng2>rng4 && rng2<rng5 && rng2<rng6 && rng2<rng1){
     notRng3 = rng2;
 }
-else{
-
-}
  // -----------------------------4---------------------------------   
  if(rng1>rng2 && rng1>rng3 && rng1<rng4 && rng1<rng5 && rng1<rng6){
     notRng4 = rng1;
@@ -493,8 +494,6 @@ else if(rng3>rng4 && rng3>rng5 && rng3<rng6 && rng3<rng1 && rng3<rng2){
 }
 else if(rng2>rng3 && rng2>rng4 && rng2<rng5 && rng2<rng6 && rng2<rng1){
     notRng4 = rng2;
-}
-else{
 }
  // -----------------------------5---------------------------------   
  if(rng1>rng2 && rng1<rng3 && rng1<rng4 && rng1<rng5 && rng1<rng6){
@@ -516,9 +515,6 @@ else if(rng2>rng3 && rng2<rng4 && rng2<rng5 && rng2>rng6 && rng2<rng1){
 
     notRng5 = rng2;
 }
-else{
-    
-}
 // -----------------------------6---------------------------------
 if(rng1<rng2 && rng1<rng3 && rng1<rng4 && rng1<rng5 && rng1<rng6){
     notRng6 = rng1;
@@ -539,9 +535,7 @@ else if(rng2<rng3 && rng2<rng4 && rng2<rng5 && rng2<rng6 && rng2<rng1){
 
     notRng6 = rng2;
 }
-else{
-    
-}
+
 
 console.log(rng1);
 console.log(rng2);
