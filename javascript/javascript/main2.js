@@ -52,6 +52,8 @@ console.log("Star Wars: Episode "+ " ".repeat( Math.ceil(Math.random() * 1))+ (M
 console.log("-----------------------------------------------8----------------------------------------")
 
 let sentence1 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood”";
+let sentence2 = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
 
-console.log(sentence1.length);
-console.log(sentence1.replace(/[a-z]^(?:\w{3}|\w{5})$/gi, ''));
+console.log(sentence1.replace(/[a-z]{6,10}/gi, ''));
+console.log(sentence2.replace(/[a-z;ą]{6,10}/gi, ''));
+
