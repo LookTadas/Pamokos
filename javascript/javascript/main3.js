@@ -48,15 +48,15 @@ console.log("-----------------------------------------------------------------3-
 // * * * * * * * * * * *
 
 
-for (let i = 0; i <= 100; i++) {
-    let star1 = "";
-    for (let i = 0; i <= 100; i++) {
-        star1 += "*";
-        // console.log(star2);
+// for (let i = 0; i <= 100; i++) {
+//     let star1 = "";
+//     for (let i = 0; i <= 100; i++) {
+//         star1 += "*";
+//         // console.log(star2);
 
-    }
-    console.log(star1);
-}
+//     }
+//     console.log(star1);
+// }
 
 
 console.log("-----------------------------------------------------------------4----------------------------------------------------------------------------")
@@ -69,22 +69,53 @@ console.log("-----------------------------------------------------------------4-
 // * * * * * * * 
 // * * * * * * * 
 // * * * * * * * 
+// let ilgis = 20
+// let plotis = 20
+// let ratio1 = 20/20
 
-let width = 100
-let height = 100
-let ratio = width/height; 
+// for (let i = 0; i < 100; i++) {
+//     let star1 = "";
+//     for (let i1 = 0; i1 < 100; i1++) {    
+//         diff1 = ((i*1), 10);
+//         if(diff1 == i1){
+//             star1 = "*";
+//         }
+//         if(i1 = 100 - diff1 - 1){
+//             star1 = "O";
+//         }
 
-for (let row = 0; row < height; row++) {
-    for (let col = 0; col < width; col++) {
-        let diff = parseInt((row * ratio), 10);
+//     }
+//     console.log(star1);
+// }
+
+
+
+// let width = 100
+// let height = 100
+// let ratio = width/height; 
+
+// for (let row = 0; row < height; row++) {
+//     let star1 = ""
+//     for (let col = 0; col < width; col++) {
+//         let diff = parseInt((row * ratio));
+//         star1 = "x";
+//         // if(diff == col ){
+//         //     star1 = "O";
+//         // }
+//         // if(col == 100 - diff - 1){
+//         //     star1 = "*";
+//         // }
+
+
         
-        document.write (diff == col || col == width - diff - 1 ? '*' : 'O')
+//         // star1 = (diff == col || col == width - diff - 1 ? 'O' : '*')
             
-        if(col == width - 1) {
-            document.write ('<br>')
-        }
-    }
-}
+//         // if(col == width - 1) {
+//         //     // document.write ('<br>')
+//         // }
+//     }
+//     console.log(star1)
+// }
 
 console.log("-----------------------------------------------------------------5----------------------------------------------------------------------------")
 
@@ -220,9 +251,11 @@ let hitBigCount = 0;
 let hitBigLenght = 0;
 let allBigHits = 0;
 
+
 while(true){
-    let hit = (30 + Math.round(Math.random() * (20 - 30)))
-    if(hitBigLenght <= 85){
+    let prob = (Math.round(Math.random() <= 0.5));
+    let hit = ((30 + Math.round(Math.random() * (20 - 30))) * prob);
+    if(hitBigLenght <= 85){ 
         hitBigLenght += hit;
         hitBigCount++;
     }else{
@@ -235,6 +268,8 @@ while(true){
 
     }
 }
+let prob = (Math.round(Math.random()));
+console.log(prob);
 
 
 
