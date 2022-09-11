@@ -49,15 +49,15 @@ console.log("3------------------------------------------------------------------
 // * * * * * * * * * * *
 
 
-// for (let i = 0; i <= 100; i++) {
-//     let star1 = "";
-//     for (let i = 0; i <= 100; i++) {
-//         star1 += "*";
-//         // console.log(star2);
+for (let i = 0; i <= 100; i++) {
+    let star1 = "";
+    for (let i = 0; i <= 100; i++) {
+        star1 += "*";
+        // console.log(star2);
 
-//     }
-//     console.log(star1);
-// }
+    }
+    console.log(star1);
+}
 
 
 console.log("4----------------------------------------------------------------------------")
@@ -75,18 +75,22 @@ console.log("4------------------------------------------------------------------
 // let ratio1 = 20/20
 
 // for (let i = 0; i < 100; i++) {
-//     let star1 = "";
-//     for (let i1 = 0; i1 < 100; i1++) {    
-//         diff1 = ((i*1), 10);
-//         if(diff1 == i1){
-//             star1 = "*";
-//         }
-//         if(i1 = 100 - diff1 - 1){
-//             star1 = "O";
-//         }
-
+    // let star1 = "";
+//     for (let i1 = 0; i1 < 100; i1++) {
+        
+//         for(let i2 = 0; i2 < 100; i2++){   
+//             let star2 = ""; 
+//             diff1 = ((i1*1));
+//             if(diff1 == i2){
+//                 star2 = "*";
+//             }
+//             if(i1 = 100 - diff1 - 1){
+//                 star2 = "O";
+//             }
+//             console.log(star2);
 //     }
-//     console.log(star1);
+// }
+    
 // }
 
 
