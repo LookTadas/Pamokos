@@ -1,12 +1,17 @@
-// console.log("-----------1 užduotis----------------");
+// Negalima naudoti ciklų ir masyvų
 
-// let name = "Tadas";
-// let surname = "Lukošius";
-// let birthrngYear = "1991";
-// let currentrngYear = "2022";
+console.log("-----------1 užduotis----------------");
+
+// 1Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
+// "Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".
+
+let name = "Tadas";
+let surname = "Lukošius";
+let birthrngYear = "1991";
+let currentrngYear = "2022";
 
 
-// console.log("Aš esu " + name + " " + surname + ". Man rngYra " + (currentrngYear - birthrngYear) + " metai(ų).");
+console.log("Aš esu " + name + " " + surname + ". Man rngYra " + (currentrngYear - birthrngYear) + " metai(ų).");
 
 // // console.log("=============math random=============")
 // // console.log(Math.random());
@@ -41,133 +46,87 @@
 // //     console.log("neteisingas")
 // // }
 
-// console.log("-----------2 užduotis----------------");
+console.log("-----------2 užduotis----------------");
+// Naudokite funkcija Math.random(). Sukurkite du kintamuosius ir naudodamiesi funkcija Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
 
-// let randomNumber1 = ((Math.random() * 4));
-// let randomNumber2 = ((Math.random() * 4));
-
-
-// if (randomNumber1  > = randomNumber2) {
-//     console.log(Math.round((randomNumber1 / randomNumber2) * 100) / 100);
-// }
-// else {
-//     console.log(Math.round((randomNumber2 / randomNumber1) * 100) / 100)
-// };
-
-// console.log("-----------3 užduotis----------------");
-// // pataisrngYti
-// let randomNumber3 = (Math.floor(Math.random() * 25));
-// let randomNumber4 = (Math.floor(Math.random() * 25));
-// let randomNumber5 = (Math.floor(Math.random() * 25));
-
-// // console.log(randomNumber3);
-// // console.log(randomNumber4);
-// // console.log(randomNumber5);
-
-// if (randomNumber3  <  randomNumber4) {
-//     if (randomNumber4  <  randomNumber5) {
-//         console.log(randomNumber4);
-//     }
-// };
-
-// if (randomNumber3  <  randomNumber5) {
-//     if (randomNumber5  <  randomNumber4) {
-//         console.log(randomNumber5);
-//     }
-// }
-
-// if (randomNumber4  <  randomNumber3) {
-//     if (randomNumber3  <  randomNumber5) {
-//         console.log(randomNumber3);
-//     }
-// }
-
-// if (randomNumber4  <  randomNumber5) {
-//     if (randomNumber5  <  randomNumber3) {
-//         console.log(randomNumber5);
-
-//     }
-
-//     if (randomNumber5  <  randomNumber4) {
-//         if (randomNumber4  <  randomNumber3) {
-//             console.log(randomNumber4);
-//         }
-//     }
-
-//     if (randomNumber5  <  randomNumber3) {
-//         if (randomNumber3  <  randomNumber4) {
-//             console.log(randomNumber3);
-//         }
-//     }
-
-//     if (randomNumber3 == randomNumber4) {
-//         if (randomNumber5  <  randomNumber3) {
-//             console.log(randomNumber4);
-//         }
-//     }
-
-//     if (randomNumber3 == randomNumber5) {
-//         if (randomNumber4  <  randomNumber3) {
-//             console.log(randomNumber3);
-//         }
-//     }
-
-//     if (randomNumber4 == randomNumber5) {
-//         if (randomNumber3  <  randomNumber4) {
-//             console.log(randomNumber4);
-//         }
-//     }
-
-//     if (randomNumber3 == randomNumber4) {
-//         if (randomNumber5 > randomNumber3) {
-//             console.log(randomNumber4);
-//         }
-//     }
-
-//     if (randomNumber3 == randomNumber5) {
-//         if (randomNumber4 > randomNumber3) {
-//             console.log(randomNumber3);
-//         }
-//     }
-
-//     if (randomNumber4 == randomNumber5)
-//         if (randomNumber3 > randomNumber4) {
-//             console.log(randomNumber4);
-//         }
-// }
-
-// console.log("------------------4 užduotis---------------------")
-
-// // pataisrngYti su Math.round, nes math.ceil gali būti nulis.
-// let A = (Math.ceil(Math.random() * 10));
-// let B = (Math.ceil(Math.random() * 10));
-// let C = (Math.ceil(Math.random() * 10));
-// let P = ((A + B + C) / 2)
-// let S = (Math.sqrt(P * (P - A) * (P - B) * (P - C)))
-
-// // let true1 = "true1";
-// // let true2 = "true2";
-// // let true3 = "true3";
-// // let negative = "negative"
-
-// if ((A + B > C) && (A + C > B) && (B + C > A)) {
-//     console.log(((Math.round((S) * 100)) / 100));
-// }
-// else {
-//     console.log("Trikampio pastatrngYti neįmanoma!!!")
-// }
-
-// console.log("------------------5 užduotis---------------------")
+let rnNr1 = ((Math.random() * 4));
+let rnNr2 = ((Math.random() * 4));
 
 
-// let randomizer1 = (Math.round(Math.random() * 2));
-// let randomizer2 = (Math.round(Math.random() * 2));
-// let randomizer3 = (Math.round(Math.random() * 2));
-// let randomizer4 = (Math.round(Math.random() * 2));
+if (rnNr1  >= rnNr2) {
+    console.log(Math.round((rnNr1 / rnNr2) * 100) / 100);
+}
+else {
+    console.log(Math.round((rnNr2 / rnNr1) * 100) / 100)
+};
 
-// let nulis1 = 0;
-// let vienas1 = 0;
-// let du1 = 0;
+console.log("-----------3 užduotis----------------");
+// Naudokite funkcija Math.random(). Sukurkite tris kintamuosius ir naudodamiesi funkcija Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
+
+let rnNr3 = (Math.floor(Math.random() * 25));
+let rnNr4 = (Math.floor(Math.random() * 25));
+let rnNr5 = (Math.floor(Math.random() * 25));
+
+// console.log(rnNr3);
+// console.log(rnNr4);
+// console.log(rnNr5);
+
+if(rnNr3 > rnNr4 && rnNr3 > rnNr5){
+    if(rnNr4>rnNr5){
+        console.log(rnNr4);
+    }else{
+        console.log(rnNr5);
+    }
+}else if(rnNr4 > rnNr3 && rnNr4 > rnNr5){
+    if(rnNr3>rnNr5){
+        console.log(rnNr3);
+    }else{
+        console.log(rnNr5);
+    }
+}else if(rnNr5 > rnNr4 && rnNr5 > rnNr3){
+    if(rnNr4>rnNr3){
+        console.log(rnNr4);
+    }else{
+        console.log(rnNr3);
+    }
+}
+
+console.log("------------------4 užduotis---------------------")
+// Įvedami skaičiai - a, b, c –kraštinių ilgiai, trys kintamieji (naudokite ​Math.random()​ funkcija nuo 1 iki 10). Parašykite JavaScript programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų. 
+
+
+// pataisrngYti su Math.round, nes math.ceil gali būti nulis.
+let A = (Math.round(Math.random() * 10));
+let B = (Math.round(Math.random() * 10));
+let C = (Math.round(Math.random() * 10));
+let P = ((A + B + C) / 2)
+let S = (Math.sqrt(P * (P - A) * (P - B) * (P - C)))
+
+// let true1 = "true1";
+// let true2 = "true2";
+// let true3 = "true3";
+// let negative = "negative"
+
+if ((A + B > C) && (A + C > B) && (B + C > A)) {
+    console.log(((Math.round((S) * 100)) / 100));
+}
+else {
+    console.log("Trikampio pastatrngYti neįmanoma!!!")
+}
+
+console.log("------------------5 užduotis---------------------")
+// Sukurkite keturis kintamuosius ir ​Math.random()​ funkcija sugeneruokite jiems 
+// reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti).
+
+
+let randomizer1 = (Math.round(Math.random() * 2));
+let randomizer2 = (Math.round(Math.random() * 2));
+let randomizer3 = (Math.round(Math.random() * 2));
+let randomizer4 = (Math.round(Math.random() * 2));
+
+let nulis1 = 0;
+let vienas1 = 0;
+let du1 = 0;
 // let nulis2 = 0;
 // let vienas2 = 0;
 // let du2 = 0;
@@ -178,232 +137,216 @@
 // let vienas4 = 0;
 // let du4 = 0;
 
-// // let counter1 = 
+// let counter1 = 
 
-// if ((randomizer1 == 0)) {
-//     nulis1 = 1;
-// }
+if((randomizer1 == 0)) {
+    nulis1++;
+}
+if(randomizer1 == 1) {
+    vienas1++;
+}
+if((randomizer1 == 2)) {
+    du1++;
+};
 
-// if (randomizer1 == 1) {
-//     vienas1 = 1;
-// }
-// else {
-//     du1 = 1;
-// };
+if((randomizer2 == 0)) {
+    nulis1++;
+}
+if(randomizer2 == 1) {
+    vienas1++;
+}
+if((randomizer2 == 2)) {
+    du1++;
+};
 
-// if ((randomizer2 == 0)) {
-//     nulis2 = 1;
-// }
+if((randomizer3 == 0)) {
+    nulis1++;
+}
+if(randomizer3 == 1) {
+    vienas1++;
+}
+if((randomizer3 == 2)) {
+    du1++;
+};
 
-// if (randomizer2 == 1) {
-//     vienas2 = 1;
-// }
-// else {
-//     du2 = 1;
-// };
+if((randomizer4 == 0)) {
+    nulis1++;
+}
+if(randomizer4 == 1) {
+    vienas1++;
+}
+if((randomizer4 == 2)) {
+    du1++;
+};
 
-// if ((randomizer3 == 0)) {
-//     nulis3 = 1;
-// }
+console.log("nuliai - " + nulis1);
+console.log("vienetai - " + vienas1);
+console.log("dvejetai - " + du1);
 
-// if (randomizer3 == 1) {
-//     vienas3 = 1;
-// }
-// else {
-//     du3 = 1;
-// }
+console.log("-----------------6 užduotis----------------")
+// Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti  laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}. 
 
-// if ((randomizer4 == 0)) {
-//     nulis4 = 1;
-// }
-
-// if (randomizer4 == 1) {
-//     vienas4 = 1;
-// }
-// else {
-//     du4 = 1;
-// };
-
-// console.log("nuliai - " + (nulis1 + nulis2 + nulis3 + nulis4));
-// console.log("vienetai - " + (vienas1 + vienas2 + vienas3 + nulis4));
-// console.log("dvejetai - " + (du1 + du2 + du3 + du4));
-
-// console.log("-----------------6 užduotis----------------")
-
-// let rnd1 = (Math.round(Math.random() * 20) - 10);
-// let rnd2 = (Math.round(Math.random() * 20) - 10);
-// let rnd3 = (Math.round(Math.random() * 20) - 10);
+let rnd1 = (Math.round(Math.random() * 20) - 10);
+let rnd2 = (Math.round(Math.random() * 20) - 10);
+let rnd3 = (Math.round(Math.random() * 20) - 10);
 
 
-// // rnd1 = 0;
-// // rnd2 = -1;
-// // rnd3 = 10;
-// // console.log(rnd1);
+// rnd1 = 0;
+// rnd2 = -1;
+// rnd3 = 10;
+// console.log(rnd1);
 
-// if ((rnd1 > 0)) {
-//     console.log("{" + rnd1 + "}");
-// }
-// if ((rnd1  <  0)) {
-//     console.log("[" + rnd1 + "]");
-// }
-// if ((rnd1 == 0)) {
-//     console.log("(" + rnd1 + ")");
-// }
+if ((rnd1 > 0)) {
+    console.log("{" + rnd1 + "}");
+}
+if ((rnd1  <  0)) {
+    console.log("[" + rnd1 + "]");
+}
+if ((rnd1 == 0)) {
+    console.log("(" + rnd1 + ")");
+}
 
-// if ((rnd2 > 0)) {
-//     console.log("{" + rnd2 + "}");
-// }
-// if ((rnd2  <  0)) {
-//     console.log("[" + rnd2 + "]");
-// }
-// if ((rnd2 == 0)) {
-//     console.log("(" + rnd2 + ")");
-// }
+if ((rnd2 > 0)) {
+    console.log("{" + rnd2 + "}");
+}
+if ((rnd2  <  0)) {
+    console.log("[" + rnd2 + "]");
+}
+if ((rnd2 == 0)) {
+    console.log("(" + rnd2 + ")");
+}
 
-// if ((rnd3 > 0)) {
-//     console.log("{" + rnd3 + "}");
-// }
-// if ((rnd3  <  0)) {
-//     console.log("[" + rnd3 + "]");
-// }
-// if ((rnd3 == 0)) {
-//     console.log("(" + rnd3 + ")");
-// }
+if ((rnd3 > 0)) {
+    console.log("{" + rnd3 + "}");
+}
+if ((rnd3  <  0)) {
+    console.log("[" + rnd3 + "]");
+}
+if ((rnd3 == 0)) {
+    console.log("(" + rnd3 + ")");
+}
 
-// console.log("--------------------------------------7 užduotis-----------------------------")
+console.log("--------------------------------------7 užduotis-----------------------------")
+// Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.
 
-// let kaina = (3000 + Math.round(Math.random() * (5 - 3000)))
+let kaina = (3000 + Math.round(Math.random() * (5 - 3000)))
 // console.log(kaina);
 
-// if (kaina  <  1000) {
-//     console.log(kaina);
+let štuka = (kaina - (kaina * 0.03))
+let duoŠtuka = (kaina - (kaina * 0.04))
+
+if (kaina  <  1000) {
+    console.log(kaina);
+}
+if (kaina  >= 1000 && kaina  <  2000) {
+    console.log(štuka);
+}
+if (kaina  >= 2000) {
+    console.log(duoŠtuka);
+}
+
+console.log("---------------------------------8 užduotis----------------------------")
+// Naudokite funkcija Math.random(). Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100. Paskaičiuokite jų aritmetinį vidurkį. Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
+
+
+let kintamasis1 = (1+(Math.round(Math.random() * 100)));
+let kintamasis2 = (1+(Math.round(Math.random() * 100)));
+let kintamasis3 = (1+(Math.round(Math.random() * 100)));
+// console.log(kintamasis1);
+// console.log(kintamasis2);
+// console.log(kintamasis3);
+
+let sk1 = 0;
+let sk2 = 0;
+let sk3 = 0;
+
+let kintamasis1A = kintamasis1;
+let kintamasis2A = kintamasis2;
+let kintamasis63A= kintamasis3;
+
+
+if (kintamasis1 > 10 && kintamasis1  <  90) {
+    kintamasis1A = kintamasis1;
+}
+else {
+    kintamasis1A = 0;
+}
+if (kintamasis2 > 10 && kintamasis2  <  90) {
+    kintamasis2A = kintamasis2;
+}
+else {
+    kintamasis2A = 0;
+}
+if (kintamasis3 > 10 && kintamasis3  <  90){
+    kintamasis3A = kintamasis3;
+}
+else {
+    kintamasis3A = 0;
+}
+
+if (kintamasis1 > 10 && kintamasis1  <  90){
+    sk1++;
+}
+if (kintamasis2 > 10 && kintamasis2  <  90){
+    sk1++;
+}
+if (kintamasis3 > 10 && kintamasis3  <  90){
+    sk1++;
+}
+
+let vidurkis = ((kintamasis1 + kintamasis2 + kintamasis3) / 3);
+let vidurkis2 = ((kintamasis1A + kintamasis2A + kintamasis3A) / (sk1));
+
+console.log(vidurkis);
+console.log(vidurkis2);
+
+console.log("----------------------papildoma 1---------------------------")
+// Padarykite skaitmeninį laikrodį, rodantį valandas, minutes ir sekundes. Valandom, minutėm ir sekundėm sugeneruoti panaudokite funkciją Math.random(). Sugeneruokite skaičių nuo 0 iki 300. Tai papildomos sekundės. Skaičių pridėkite prie jau sugeneruoto laiko. Atspausdinkite laikrodį prieš ir po sekundžių pridėjimo ir pridedamų sekundžių skaičių.
+// Čia panaudojau funkcija https://stackoverflow.com/questions/45302779/javascript-random-generate-time-in-12-hour-format
+
+
+// randomTime = () = >  {
+hrs = Math.round(Math.random() * 12);
+mins = Math.round(Math.random() * 60);
+secs = Math.round(Math.random() * 60);
+let hrsFormat = (hrs  <  10 ? "0" : "")
+let minFormat = (mins  <  10 ? "0" : "")
+let secsFormat = (secs  <  10 ? "0" : "")
+console.log(String(hrsFormat + hrs + ":" + minFormat + mins + ":" + secsFormat + secs));
+
+plius = Math.round(Math.random() * 300);
+minutesPlius = Math.floor (plius / 60);
+secsPlius = plius - (minutesPlius * 60);
+
+minsNew = mins + minutesPlius
+secsNew = secs + secsPlius
+
+if(secsNew > 60){
+    secsNew = secsNew - 60;
+    minsNew = minsNew + 1;
+}
+if(minsNew > 60){
+    minsNew = minsNew - 60;
+    hrs = hrs + 1;
+}
+if(hrs > 12){
+    hrs = hrs - 12;
+}
+
+let hrsFormat1 = (hrs  <  10 ? "0" : "")
+let minFormat1 = (minsNew  <  10 ? "0" : "")
+let secsFormat1 = (secsNew  <  10 ? "0" : "")
+
+console.log(String(hrsFormat1 + hrs + ":" + minFormat1 + minsNew + ":" + secsFormat1 + secsNew));
+
+
+// console.log(plius);
+// console.log(minutesPlius);
+// console.log(secsPlius);
+
 // }
-// if (kaina  > = 1000 && kaina  <  2000) {
-//     console.log(kaina - (kaina * 0.03));
-
-
-// }
-// if (kaina  > = 2000) {
-//     console.log(kaina - (kaina * 0.04));
-// }
-
-// console.log("---------------------------------8 užduotis----------------------------")
-
-// let kintamasis1 = (1+(Math.round(Math.random() * 100)));
-// let kintamasis2 = (1+(Math.round(Math.random() * 100)));
-// let kintamasis3 = (1+(Math.round(Math.random() * 100)));
-
-// let sk1 = 0;
-// let sk2 = 0;
-// let sk3 = 0;
-
-// let kintamasis4 = kintamasis1;
-// let kintamasis5 = kintamasis2;
-// let kintamasis6 = kintamasis3;
-
-
-// if (kintamasis1 > 10 && kintamasis1  <  90) {
-//     kintamasis4 = kintamasis1;
-// }
-// else {
-//     kintamasis4 = 0;
-// }
-
-// if (kintamasis2 > 10 && kintamasis2  <  90) {
-//     kintamasis5 = kintamasis2;
-// }
-// else {
-//     kintamasis5 = 0;
-// }
-
-// if (kintamasis3 > 10 && kintamasis3  <  90) {
-//     kintamasis6 = kintamasis3;
-// }
-// else {
-//     kintamasis6 = 0;
-// }
-
-// if (kintamasis1 > 10 && kintamasis1  <  90) {
-//     sk1 = 1;
-// }
-// else {
-//     sk1 = 0;
-// }
-
-// if (kintamasis2 > 10 && kintamasis2  <  90) {
-//     sk2 = 1;
-// }
-// else {
-//     sk2 = 0;
-// }
-
-// if (kintamasis3 > 10 && kintamasis3  <  90) {
-//     sk3 = 1;
-// }
-// else {
-//     sk3 = 0;
-// }
-
-// // console.log(kintamasis1);
-// // console.log(kintamasis2);
-// // console.log(kintamasis3);
-
-// let vidurkis = ((kintamasis1 + kintamasis2 + kintamasis3) / 3);
-// let vidurkis2 = ((kintamasis4 + kintamasis5 + kintamasis6) / (sk1 + sk2 + sk3));
-
-// console.log(Math.round(vidurkis));
-// if((kintamasis4 + kintamasis5 + kintamasis6) != 0 && (sk1 + sk2 + sk3) != 0){
-//     console.log(Math.round(vidurkis2));
-// }else{
-//     console.log("Vidurkio apskaičiuoti negalima!!!");
-// }
-
-
-
-// console.log("----------------------papildoma 1---------------------------")
-
-// // randomTime = () = >  {
-// hrs = Math.round(Math.random() * 12);
-// mins = Math.round(Math.random() * 60);
-// secs = Math.round(Math.random() * 60);
-// let hrsFormat = (hrs  <  10 ? "0" : "")
-// let minFormat = (mins  <  10 ? "0" : "")
-// let secsFormat = (secs  <  10 ? "0" : "")
-// console.log(String(hrsFormat + hrs + ":" + minFormat + mins + ":" + secsFormat + secs));
-
-// plius = Math.round(Math.random() * 300);
-// minutesPlius = Math.floor (plius / 60);
-// secsPlius = plius - (minutesPlius * 60);
-
-// minsNew = mins + minutesPlius
-// secsNew = secs + secsPlius
-
-// if(secsNew > 60){
-//     secsNew = secsNew - 60;
-//     minsNew = minsNew + 1;
-// }
-// if(minsNew > 60){
-//     minsNew = minsNew - 60;
-//     hrs = hrs + 1;
-// }
-// if(hrs > 12){
-//     hrs = hrs - 12;
-// }
-
-// let hrsFormat1 = (hrs  <  10 ? "0" : "")
-// let minFormat1 = (minsNew  <  10 ? "0" : "")
-// let secsFormat1 = (secsNew  <  10 ? "0" : "")
-
-// console.log(String(hrsFormat1 + hrs + ":" + minFormat1 + minsNew + ":" + secsFormat1 + secsNew));
-
-
-// // console.log(plius);
-// // console.log(minutesPlius);
-// // console.log(secsPlius);
-
-// // }
-// // randomTime();
-// // console.log(resultTime);
+// randomTime();
+// console.log(resultTime);
 console.log("-----------------------10 užduotis-------------------------------")
 
 let rng1 = (1000 + Math.round(Math.random() * 9000));
