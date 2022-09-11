@@ -53,7 +53,7 @@ let rnNr1 = ((Math.random() * 4));
 let rnNr2 = ((Math.random() * 4));
 
 
-if (rnNr1  >= rnNr2) {
+if (rnNr1 >= rnNr2) {
     console.log(Math.round((rnNr1 / rnNr2) * 100) / 100);
 }
 else {
@@ -71,22 +71,22 @@ let rnNr5 = (Math.floor(Math.random() * 25));
 // console.log(rnNr4);
 // console.log(rnNr5);
 
-if(rnNr3 > rnNr4 && rnNr3 > rnNr5){
-    if(rnNr4>rnNr5){
+if (rnNr3 > rnNr4 && rnNr3 > rnNr5) {
+    if (rnNr4 > rnNr5) {
         console.log(rnNr4);
-    }else{
+    } else {
         console.log(rnNr5);
     }
-}else if(rnNr4 > rnNr3 && rnNr4 > rnNr5){
-    if(rnNr3>rnNr5){
+} else if (rnNr4 > rnNr3 && rnNr4 > rnNr5) {
+    if (rnNr3 > rnNr5) {
         console.log(rnNr3);
-    }else{
+    } else {
         console.log(rnNr5);
     }
-}else if(rnNr5 > rnNr4 && rnNr5 > rnNr3){
-    if(rnNr4>rnNr3){
+} else if (rnNr5 > rnNr4 && rnNr5 > rnNr3) {
+    if (rnNr4 > rnNr3) {
         console.log(rnNr4);
-    }else{
+    } else {
         console.log(rnNr3);
     }
 }
@@ -139,43 +139,43 @@ let du1 = 0;
 
 // let counter1 = 
 
-if((randomizer1 == 0)) {
+if ((randomizer1 == 0)) {
     nulis1++;
 }
-if(randomizer1 == 1) {
+if (randomizer1 == 1) {
     vienas1++;
 }
-if((randomizer1 == 2)) {
+if ((randomizer1 == 2)) {
     du1++;
 };
 
-if((randomizer2 == 0)) {
+if ((randomizer2 == 0)) {
     nulis1++;
 }
-if(randomizer2 == 1) {
+if (randomizer2 == 1) {
     vienas1++;
 }
-if((randomizer2 == 2)) {
+if ((randomizer2 == 2)) {
     du1++;
 };
 
-if((randomizer3 == 0)) {
+if ((randomizer3 == 0)) {
     nulis1++;
 }
-if(randomizer3 == 1) {
+if (randomizer3 == 1) {
     vienas1++;
 }
-if((randomizer3 == 2)) {
+if ((randomizer3 == 2)) {
     du1++;
 };
 
-if((randomizer4 == 0)) {
+if ((randomizer4 == 0)) {
     nulis1++;
 }
-if(randomizer4 == 1) {
+if (randomizer4 == 1) {
     vienas1++;
 }
-if((randomizer4 == 2)) {
+if ((randomizer4 == 2)) {
     du1++;
 };
 
@@ -199,7 +199,7 @@ let rnd3 = (Math.round(Math.random() * 20) - 10);
 if ((rnd1 > 0)) {
     console.log("{" + rnd1 + "}");
 }
-if ((rnd1  <  0)) {
+if ((rnd1 < 0)) {
     console.log("[" + rnd1 + "]");
 }
 if ((rnd1 == 0)) {
@@ -209,7 +209,7 @@ if ((rnd1 == 0)) {
 if ((rnd2 > 0)) {
     console.log("{" + rnd2 + "}");
 }
-if ((rnd2  <  0)) {
+if ((rnd2 < 0)) {
     console.log("[" + rnd2 + "]");
 }
 if ((rnd2 == 0)) {
@@ -219,7 +219,7 @@ if ((rnd2 == 0)) {
 if ((rnd3 > 0)) {
     console.log("{" + rnd3 + "}");
 }
-if ((rnd3  <  0)) {
+if ((rnd3 < 0)) {
     console.log("[" + rnd3 + "]");
 }
 if ((rnd3 == 0)) {
@@ -235,13 +235,13 @@ let kaina = (3000 + Math.round(Math.random() * (5 - 3000)))
 let štuka = (kaina - (kaina * 0.03))
 let duoŠtuka = (kaina - (kaina * 0.04))
 
-if (kaina  <  1000) {
+if (kaina < 1000) {
     console.log(kaina);
 }
-if (kaina  >= 1000 && kaina  <  2000) {
+if (kaina >= 1000 && kaina < 2000) {
     console.log(štuka);
 }
-if (kaina  >= 2000) {
+if (kaina >= 2000) {
     console.log(duoŠtuka);
 }
 
@@ -249,9 +249,9 @@ console.log("---------------------------------8 užduotis-----------------------
 // Naudokite funkcija Math.random(). Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100. Paskaičiuokite jų aritmetinį vidurkį. Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
 
 
-let kintamasis1 = (1+(Math.round(Math.random() * 100)));
-let kintamasis2 = (1+(Math.round(Math.random() * 100)));
-let kintamasis3 = (1+(Math.round(Math.random() * 100)));
+let kintamasis1 = (1 + (Math.round(Math.random() * 100)));
+let kintamasis2 = (1 + (Math.round(Math.random() * 100)));
+let kintamasis3 = (1 + (Math.round(Math.random() * 100)));
 // console.log(kintamasis1);
 // console.log(kintamasis2);
 // console.log(kintamasis3);
@@ -262,35 +262,35 @@ let sk3 = 0;
 
 let kintamasis1A = kintamasis1;
 let kintamasis2A = kintamasis2;
-let kintamasis63A= kintamasis3;
+let kintamasis63A = kintamasis3;
 
 
-if (kintamasis1 > 10 && kintamasis1  <  90) {
+if (kintamasis1 > 10 && kintamasis1 < 90) {
     kintamasis1A = kintamasis1;
 }
 else {
     kintamasis1A = 0;
 }
-if (kintamasis2 > 10 && kintamasis2  <  90) {
+if (kintamasis2 > 10 && kintamasis2 < 90) {
     kintamasis2A = kintamasis2;
 }
 else {
     kintamasis2A = 0;
 }
-if (kintamasis3 > 10 && kintamasis3  <  90){
+if (kintamasis3 > 10 && kintamasis3 < 90) {
     kintamasis3A = kintamasis3;
 }
 else {
     kintamasis3A = 0;
 }
 
-if (kintamasis1 > 10 && kintamasis1  <  90){
+if (kintamasis1 > 10 && kintamasis1 < 90) {
     sk1++;
 }
-if (kintamasis2 > 10 && kintamasis2  <  90){
+if (kintamasis2 > 10 && kintamasis2 < 90) {
     sk1++;
 }
-if (kintamasis3 > 10 && kintamasis3  <  90){
+if (kintamasis3 > 10 && kintamasis3 < 90) {
     sk1++;
 }
 
@@ -309,33 +309,33 @@ console.log("----------------------papildoma 1---------------------------")
 hrs = Math.round(Math.random() * 12);
 mins = Math.round(Math.random() * 60);
 secs = Math.round(Math.random() * 60);
-let hrsFormat = (hrs  <  10 ? "0" : "")
-let minFormat = (mins  <  10 ? "0" : "")
-let secsFormat = (secs  <  10 ? "0" : "")
+let hrsFormat = (hrs < 10 ? "0" : "")
+let minFormat = (mins < 10 ? "0" : "")
+let secsFormat = (secs < 10 ? "0" : "")
 console.log(String(hrsFormat + hrs + ":" + minFormat + mins + ":" + secsFormat + secs));
 
 plius = Math.round(Math.random() * 300);
-minutesPlius = Math.floor (plius / 60);
+minutesPlius = Math.floor(plius / 60);
 secsPlius = plius - (minutesPlius * 60);
 
 minsNew = mins + minutesPlius
 secsNew = secs + secsPlius
 
-if(secsNew > 60){
+if (secsNew > 60) {
     secsNew = secsNew - 60;
     minsNew = minsNew + 1;
 }
-if(minsNew > 60){
+if (minsNew > 60) {
     minsNew = minsNew - 60;
     hrs = hrs + 1;
 }
-if(hrs > 12){
+if (hrs > 12) {
     hrs = hrs - 12;
 }
 
-let hrsFormat1 = (hrs  <  10 ? "0" : "")
-let minFormat1 = (minsNew  <  10 ? "0" : "")
-let secsFormat1 = (secsNew  <  10 ? "0" : "")
+let hrsFormat1 = (hrs < 10 ? "0" : "")
+let minFormat1 = (minsNew < 10 ? "0" : "")
+let secsFormat1 = (secsNew < 10 ? "0" : "")
 
 console.log(String(hrsFormat1 + hrs + ":" + minFormat1 + minsNew + ":" + secsFormat1 + secsNew));
 
@@ -367,6 +367,7 @@ let rngX = 0;
 let rngX1 = 0;
 let rngY = 0;
 let rngY2 = 0;
+
 let e = 0;
 let d = 0;
 let z = 0;
@@ -377,7 +378,7 @@ let notRng3 = 0;
 let notRng4 = 0;
 let notRng5 = 0;
 let notRng6 = 0;
-// ------------poros-------------
+// poros
 if (rng1 > rng2) {
     rngA = rng1;
     rngD = rng2;
@@ -401,7 +402,7 @@ if (rng5 > rng6) {
     rngC = rng6;
     rngF = rng5;
 }
-// 6
+// didžiausias
 if (rngA > rngB && rngA > rngC) {
     notRng6 = rngA;
     if (rngB > rngC) {
@@ -411,8 +412,8 @@ if (rngA > rngB && rngA > rngC) {
         rngX = rngC;
         rngY = rngB;
     }
-} 
-else if (rngB > rngA && rngB > rngC) {
+}
+if (rngB > rngA && rngB > rngC) {
     notRng6 = rngB;
     if (rngA > rngC) {
         rngX = rngA;
@@ -422,7 +423,7 @@ else if (rngB > rngA && rngB > rngC) {
         rngY = rngA;
     }
 }
-else if (rngC > rngB && rngC > rngA) {
+if (rngC > rngB && rngC > rngA) {
     notRng6 = rngC;
     if (rngA > rngB) {
         rngX = rngA;
@@ -432,23 +433,24 @@ else if (rngC > rngB && rngC > rngA) {
         rngY = rngB;
     }
 }
-// 1
+// mažiausias
 if (rngD < rngE && rngD < rngF) {
     notRng1 = rngD;
     rngX1 = rngE;
     rngY1 = rngF;
 }
-else if (rngE < rngD && rngE < rngF) {
+if (rngE < rngD && rngE < rngF) {
     notRng1 = rngE;
     rngX1 = rngD;
     rngY1 = rngF;
 
-} else if (rngF < rngD && rngF < rngE) {
+}
+if (rngF < rngD && rngF < rngE) {
     notRng1 = rngF;
     rngX1 = rngD;
     rngY1 = rngE;
 }
-// 5
+// didesnis
 if (rngX > rngX1 && rngX > rngY && rngX > rngY1) {
     notRng5 = rngX;
     e = rngX1;
@@ -473,7 +475,7 @@ if (rngY1 > rngX && rngY1 > rngY && rngY1 > rngX1) {
     d = rngY;
     z = rngX1;
 }
-// 4 3 2 
+// didelis mažas mažesnis
 if (e > d && e > z) {
     notRng4 = e;
     if (d > z) {
@@ -512,6 +514,6 @@ if (z > e && z > d) {
 // console.log(rng5);
 // console.log(rng6);
 // console.log("-------------")
-console.log(notRng6 + " " + notRng5 + "" + " " + notRng4 + " " + " " + notRng3 + " " + notRng2 + " " + notRng1);
+console.log(notRng6 + " " + notRng5 + "" + " " + notRng4 + " " + notRng3 + " " + notRng2 + " " + notRng1);
 
 
