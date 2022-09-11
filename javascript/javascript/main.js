@@ -406,12 +406,12 @@
 // // console.log(resultTime);
 console.log("-----------------------10 užduotis-------------------------------")
 
-let rng1 = (1000 + Math.round(Math.random()* 9000));
-let rng2 = (1000 + Math.round(Math.random()* 9000));
-let rng3 = (1000 + Math.round(Math.random()* 9000));
-let rng4 = (1000 + Math.round(Math.random()* 9000));
-let rng5 = (1000 + Math.round(Math.random()* 9000));
-let rng6 = (1000 + Math.round(Math.random()* 9000));
+let rng1 = (1000 + Math.round(Math.random() * 9000));
+let rng2 = (1000 + Math.round(Math.random() * 9000));
+let rng3 = (1000 + Math.round(Math.random() * 9000));
+let rng4 = (1000 + Math.round(Math.random() * 9000));
+let rng5 = (1000 + Math.round(Math.random() * 9000));
+let rng6 = (1000 + Math.round(Math.random() * 9000));
 
 let notRngA = 0;
 let notRngB = 0;
@@ -435,140 +435,128 @@ let notRng4 = 0;
 let notRng5 = 0;
 let notRng6 = 0;
 // ------------poros-------------
-if(rng1 > rng2){
+if (rng1 > rng2) {
     notRngA = rng1;
     notRngD = rng2;
-}else{
-    notRngA = rng1;
-    notRngD = rng2;
+} else {
+    notRngA = rng2;
+    notRngD = rng1;
 }
 
-if(rng3 > rng4){
+if (rng3 > rng4) {
     notRngB = rng3;
     notRngE = rng4;
-}else{
+} else {
     notRngB = rng4;
     notRngE = rng3;
 }
 
-if(rng5 > rng6){
+if (rng5 > rng6) {
     notRngC = rng5;
     notRngF = rng6;
-}else{
+} else {
     notRngC = rng6;
     notRngF = rng5;
 }
 // 6
-if(notRngA > notRngB && notRngA > notRngC){
+if (notRngA > notRngB && notRngA > notRngC) {
     notRng6 = notRngA;
-    if(notRngB > notRngC){
+    if (notRngB > notRngC) {
         x = notRngB;
         y = notRngC;
-    }else{
+    } else {
         x = notRngC;
         y = notRngB;
-        }
-}else if(notRngB > notRngA && notRngB > notRngC){
+    }
+} 
+else if (notRngB > notRngA && notRngB > notRngC) {
     notRng6 = notRngB;
-    if(notRngA > notRngC){
+    if (notRngA > notRngC) {
         x = notRngA;
         y = notRngC;
-    }else{
+    } else {
         x = notRngC;
         y = notRngA;
-        }
     }
-else if(notRngC > notRngB && notRngC > notRngA){
+}
+else if (notRngC > notRngB && notRngC > notRngA) {
     notRng6 = notRngC;
-    if(notRngA > notRngB){
+    if (notRngA > notRngB) {
         x = notRngA;
         y = notRngB;
-    }else{
+    } else {
         x = notRngA;
         y = notRngB;
-        }
+    }
 }
 // 1
-if(notRngD < notRngE && notRngD < notRngF){
+if (notRngD < notRngE && notRngD < notRngF) {
     notRng1 = notRngD;
-    if(notRngE > notRngF){
-        x1 = notRngE;
-        y1 = notRngF;
-    }else{
-        x1 = notRngF;
-        y1 = notRngE;
-        }
-}else if(notRngE < notRngD && notRngE < notRngF){
+    x1 = notRngE;
+    y1 = notRngF;
+}
+else if (notRngE < notRngD && notRngE < notRngF) {
     notRng1 = notRngE;
-    if(notRngD > notRngF){
-        x1 = notRngD;
-        y1 = notRngF;
-    }else{
-        x1 = notRngF;
-        y1 = notRngD;
-        }
-}else if(notRngF < notRngD && notRngF < notRngE){
+    x1 = notRngD;
+    y1 = notRngF;
+
+} else if (notRngF < notRngD && notRngF < notRngE) {
     notRng1 = notRngF;
-    if(notRngD > notRngE){
-        x1 = notRngD;
-        y1 = notRngE;
-    }else{
-        x1 = notRngE;
-        y1 = notRngD;
-        }
+    x1 = notRngD;
+    y1 = notRngE;
 }
 // 5
-if(x > x1 && x > y && x > y1){
+if (x > x1 && x > y && x > y1) {
     notRng5 = x;
     e = x1;
     d = y;
     z = y1;
 }
-if(x1 > x && x1 > y && x1 > y1){
+if (x1 > x && x1 > y && x1 > y1) {
     notRng5 = x1;
     e = x;
     d = y;
     z = y1;
 }
-if(y > x && y > x1 && y > y1){
+if (y > x && y > x1 && y > y1) {
     notRng5 = y;
     e = x;
     d = x1;
     z = y1;
 }
-if(y1 > x && y1 > y && y1 > x1){
+if (y1 > x && y1 > y && y1 > x1) {
     notRng5 = y1;
     e = x;
     d = y;
     z = x1;
 }
 // 4 3 2 
-if(e > d && e > z){
+if (e > d && e > z) {
     notRng4 = e;
-    if(d > z){
+    if (d > z) {
         notRng3 = d;
         notRng2 = z;
-    }else{
+    } else {
         notRng3 = z;
         notRng2 = d;
     }
 }
-if(d > e && d > z){
+if (d > e && d > z) {
     notRng4 = d;
-    if(e > z){
+    if (e > z) {
         notRng3 = e;
         notRng2 = z;
-    }else{
+    } else {
         notRng3 = z;
         notRng2 = e;
     }
 }
-if(z > e && z > d){
+if (z > e && z > d) {
     notRng4 = z;
-    if(e > d){
+    if (e > d) {
         notRng3 = e;
         notRng2 = d;
-    }else{
+    } else {
         notRng3 = d;
         notRng2 = e;
     }
@@ -583,6 +571,6 @@ console.log(rng4);
 console.log(rng5);
 console.log(rng6);
 console.log("-------------")
-console.log(notRng6 + " " +  notRng5 + "" + " " + notRng4 + " " + " " + notRng3 + " " + notRng2 + " " + notRng1);
+console.log(notRng6 + " " + notRng5 + "" + " " + notRng4 + " " + " " + notRng3 + " " + notRng2 + " " + notRng1);
 
 
