@@ -2,18 +2,18 @@
 
 // let name = "Tadas";
 // let surname = "Lukošius";
-// let birthYear = "1991";
-// let currentYear = "2022";
+// let birthrngYear = "1991";
+// let currentrngYear = "2022";
 
 
-// console.log("Aš esu " + name + " " + surname + ". Man yra " + (currentYear - birthYear) + " metai(ų).");
+// console.log("Aš esu " + name + " " + surname + ". Man rngYra " + (currentrngYear - birthrngYear) + " metai(ų).");
 
 // // console.log("=============math random=============")
 // // console.log(Math.random());
 // // console.log(Math.random() * 100)
 
 // //Math.ceil skaičius apvalinamas į viršų
-// //Math.round apvalinamas skaičius pagal taisykle
+// //Math.round apvalinamas skaičius pagal taisrngYkle
 // //Math.floor skaičius apvalinamas į apačią
 
 // // console.log (Math.ceil(Math.random()*4));
@@ -32,7 +32,7 @@
 // // console.log (35 + Math.ceil(Math.random()*(35-40)));
 // // console.log (35 + Math.floor(Math.random()*(35-40)));
 
-// // console.log("---------------sąlyginiai sakiniai----------------")
+// // console.log("---------------sąlrngYginiai sakiniai----------------")
 
 // // if(5 > 4){
 // //     console.log("teisingas")
@@ -55,7 +55,7 @@
 // };
 
 // console.log("-----------3 užduotis----------------");
-// // pataisyti
+// // pataisrngYti
 // let randomNumber3 = (Math.floor(Math.random() * 25));
 // let randomNumber4 = (Math.floor(Math.random() * 25));
 // let randomNumber5 = (Math.floor(Math.random() * 25));
@@ -138,7 +138,7 @@
 
 // console.log("------------------4 užduotis---------------------")
 
-// // pataisyti su Math.round, nes math.ceil gali būti nulis.
+// // pataisrngYti su Math.round, nes math.ceil gali būti nulis.
 // let A = (Math.ceil(Math.random() * 10));
 // let B = (Math.ceil(Math.random() * 10));
 // let C = (Math.ceil(Math.random() * 10));
@@ -154,7 +154,7 @@
 //     console.log(((Math.round((S) * 100)) / 100));
 // }
 // else {
-//     console.log("Trikampio pastatyti neįmanoma!!!")
+//     console.log("Trikampio pastatrngYti neįmanoma!!!")
 // }
 
 // console.log("------------------5 užduotis---------------------")
@@ -413,17 +413,17 @@ let rng4 = (1000 + Math.round(Math.random() * 9000));
 let rng5 = (1000 + Math.round(Math.random() * 9000));
 let rng6 = (1000 + Math.round(Math.random() * 9000));
 
-let notRngA = 0;
-let notRngB = 0;
-let notRngC = 0;
-let notRngD = 0;
-let notRngE = 0;
-let notRngF = 0;
+let rngA = 0;
+let rngB = 0;
+let rngC = 0;
+let rngD = 0;
+let rngE = 0;
+let rngF = 0;
 
-let x = 0;
-let x1 = 0;
-let y = 0;
-let y2 = 0;
+let rngX = 0;
+let rngX1 = 0;
+let rngY = 0;
+let rngY2 = 0;
 let e = 0;
 let d = 0;
 let z = 0;
@@ -436,99 +436,99 @@ let notRng5 = 0;
 let notRng6 = 0;
 // ------------poros-------------
 if (rng1 > rng2) {
-    notRngA = rng1;
-    notRngD = rng2;
+    rngA = rng1;
+    rngD = rng2;
 } else {
-    notRngA = rng2;
-    notRngD = rng1;
+    rngA = rng2;
+    rngD = rng1;
 }
 
 if (rng3 > rng4) {
-    notRngB = rng3;
-    notRngE = rng4;
+    rngB = rng3;
+    rngE = rng4;
 } else {
-    notRngB = rng4;
-    notRngE = rng3;
+    rngB = rng4;
+    rngE = rng3;
 }
 
 if (rng5 > rng6) {
-    notRngC = rng5;
-    notRngF = rng6;
+    rngC = rng5;
+    rngF = rng6;
 } else {
-    notRngC = rng6;
-    notRngF = rng5;
+    rngC = rng6;
+    rngF = rng5;
 }
 // 6
-if (notRngA > notRngB && notRngA > notRngC) {
-    notRng6 = notRngA;
-    if (notRngB > notRngC) {
-        x = notRngB;
-        y = notRngC;
+if (rngA > rngB && rngA > rngC) {
+    notRng6 = rngA;
+    if (rngB > rngC) {
+        rngX = rngB;
+        rngY = rngC;
     } else {
-        x = notRngC;
-        y = notRngB;
+        rngX = rngC;
+        rngY = rngB;
     }
 } 
-else if (notRngB > notRngA && notRngB > notRngC) {
-    notRng6 = notRngB;
-    if (notRngA > notRngC) {
-        x = notRngA;
-        y = notRngC;
+else if (rngB > rngA && rngB > rngC) {
+    notRng6 = rngB;
+    if (rngA > rngC) {
+        rngX = rngA;
+        rngY = rngC;
     } else {
-        x = notRngC;
-        y = notRngA;
+        rngX = rngC;
+        rngY = rngA;
     }
 }
-else if (notRngC > notRngB && notRngC > notRngA) {
-    notRng6 = notRngC;
-    if (notRngA > notRngB) {
-        x = notRngA;
-        y = notRngB;
+else if (rngC > rngB && rngC > rngA) {
+    notRng6 = rngC;
+    if (rngA > rngB) {
+        rngX = rngA;
+        rngY = rngB;
     } else {
-        x = notRngA;
-        y = notRngB;
+        rngX = rngA;
+        rngY = rngB;
     }
 }
 // 1
-if (notRngD < notRngE && notRngD < notRngF) {
-    notRng1 = notRngD;
-    x1 = notRngE;
-    y1 = notRngF;
+if (rngD < rngE && rngD < rngF) {
+    notRng1 = rngD;
+    rngX1 = rngE;
+    rngY1 = rngF;
 }
-else if (notRngE < notRngD && notRngE < notRngF) {
-    notRng1 = notRngE;
-    x1 = notRngD;
-    y1 = notRngF;
+else if (rngE < rngD && rngE < rngF) {
+    notRng1 = rngE;
+    rngX1 = rngD;
+    rngY1 = rngF;
 
-} else if (notRngF < notRngD && notRngF < notRngE) {
-    notRng1 = notRngF;
-    x1 = notRngD;
-    y1 = notRngE;
+} else if (rngF < rngD && rngF < rngE) {
+    notRng1 = rngF;
+    rngX1 = rngD;
+    rngY1 = rngE;
 }
 // 5
-if (x > x1 && x > y && x > y1) {
-    notRng5 = x;
-    e = x1;
-    d = y;
-    z = y1;
+if (rngX > rngX1 && rngX > rngY && rngX > rngY1) {
+    notRng5 = rngX;
+    e = rngX1;
+    d = rngY;
+    z = rngY1;
 }
-if (x1 > x && x1 > y && x1 > y1) {
-    notRng5 = x1;
-    e = x;
-    d = y;
-    z = y1;
+if (rngX1 > rngX && rngX1 > rngY && rngX1 > rngY1) {
+    notRng5 = rngX1;
+    e = rngX;
+    d = rngY;
+    z = rngY1;
 }
-if (y > x && y > x1 && y > y1) {
-    notRng5 = y;
-    e = x;
-    d = x1;
-    z = y1;
+if (rngY > rngX && rngY > rngX1 && rngY > rngY1) {
+    notRng5 = rngY;
+    e = rngX;
+    d = rngX1;
+    z = rngY1;
 }
-if (y1 > x && y1 > y && y1 > x1) {
-    notRng5 = y1;
-    e = x;
-    d = y;
-    z = x1;
+if (rngY1 > rngX && rngY1 > rngY && rngY1 > rngX1) {
+    notRng5 = rngY1;
+    e = rngX;
+    d = rngY;
+    z = rngX1;
 }
 // 4 3 2 
 if (e > d && e > z) {
@@ -562,15 +562,13 @@ if (z > e && z > d) {
     }
 }
 
-
-
-console.log(rng1);
-console.log(rng2);
-console.log(rng3);
-console.log(rng4);
-console.log(rng5);
-console.log(rng6);
-console.log("-------------")
+// console.log(rng1);
+// console.log(rng2);
+// console.log(rng3);
+// console.log(rng4);
+// console.log(rng5);
+// console.log(rng6);
+// console.log("-------------")
 console.log(notRng6 + " " + notRng5 + "" + " " + notRng4 + " " + " " + notRng3 + " " + notRng2 + " " + notRng1);
 
 
