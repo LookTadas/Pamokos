@@ -95,7 +95,6 @@ console.log("------------------4 užduotis---------------------")
 // Įvedami skaičiai - a, b, c –kraštinių ilgiai, trys kintamieji (naudokite ​Math.random()​ funkcija nuo 1 iki 10). Parašykite JavaScript programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų. 
 
 
-// pataisrngYti su Math.round, nes math.ceil gali būti nulis.
 let A = (Math.round(Math.random() * 10));
 let B = (Math.round(Math.random() * 10));
 let C = (Math.round(Math.random() * 10));

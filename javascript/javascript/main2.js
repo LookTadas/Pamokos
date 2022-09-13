@@ -1,87 +1,299 @@
-console.log("1-------------------------------------");
-// Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
+// console.log("1----------------------------------------------------------------------------")
 
-let firstName = "Woody";
-let surname= "Harrelson";
+// // Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais ir suskaičiuokite kiek tarp jų yra didesnių už 150.  Skaičiai didesni nei 275 turi būti atspausdinti skliausteliuose” [ ] “.
 
-if(firstName.length < surname.length){
-    console.log(firstName);
-}
-else{
-    console.log(surname);
-}
+// let count = 0;
+// let rng1 = "";
+
+// for (let i = 0; i <= 300; i++) {
+//     let rng = Math.round(Math.random() * 300);
+
+//     if (rng > 150) {
+//         count++;
+//     }
+
+//     if (rng > 275) {
+//         rng1 += "[" + rng + "] ";
+//     }
+//     else {
+//         rng1 += rng + " ";
+//     }
+// }
+// console.log(rng1);
+// // console.log(rng1 + " " + "[" +rng1+"]");
+
+// console.log("skaičiai didesni už 150 - " + count);
 
 
-console.log("2-------------------------------------");
-// Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Vardą atspausdinti tik didžiosiom raidėm, o pavardę tik mažosioms. (LEONARDO dicaprio)
+// console.log("2----------------------------------------------------------------------------")
+// // Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.
 
-console.log(firstName.toUpperCase() + " " + surname.toLowerCase());
+// let rng2 = "";
 
-console.log("3-------------------------------------");
-// Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+// for (let i = 0; i <= 3000; i++) {
 
-let inicialai = (firstName.charAt(0) + surname.charAt(0));
+//     if (i % 77 == 0) {
+//         rng2 += i + ", ";
+//     }
+// }
+// console.log(rng2.slice(0, -2));
 
-console.log(inicialai);
+// console.log("3----------------------------------------------------------------------------")
+// // Nupieškite kvadratą iš “*”, kurio kraštines sudaro 100 “*”.
+// // * * * * * * * * * * *
+// // * * * * * * * * * * *
+// // * * * * * * * * * * *
+// // * * * * * * * * * * *
+// // * * * * * * * * * * *
+// // * * * * * * * * * * *
+// // * * * * * * * * * * *
 
-console.log("4-------------------------------------");
-// Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
 
-let paskutinėsRaidės = firstName.slice(-3) + surname.slice(-3);
+// for (let i = 0; i <= 100; i++) {
+//     let star1 = "";
+//     for (let i = 0; i <= 100; i++) {
+//         star1 += "*";
+//         // console.log(star2);
 
-console.log(paskutinėsRaidės);
+//     }
+//     console.log(star1);
+// }
 
-console.log("5-------------------------------------");
-// Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
 
-let title1 = "An American in Paris"
+// console.log("4----------------------------------------------------------------------------")
 
-let title1Change = title1.replace(/[a,A]/g, '*');
+// //     Prieš tai nupieštam kvadratui nupieškite istrižaines zaigzdute pakeisdami kitu simboliu. (reikės išsiaiškinti, kaip atvaizduoti tekstą HTML)
+// // * * * * * * * 
+// // * * * * * * * 
+// // * * * * * * * 
+// // * * * * * * *
+// // * * * * * * * 
+// // * * * * * * * 
+// // * * * * * * * 
+// // let ilgis = 20
+// // let plotis = 20
+// // let ratio1 = 20/20
 
-console.log (title1Change);
+// // for (let i = 0; i < 100; i++) {
+//     // let star1 = "";
+// //     for (let i1 = 0; i1 < 100; i1++) {
+        
+// //         for(let i2 = 0; i2 < 100; i2++){   
+// //             let star2 = ""; 
+// //             diff1 = ((i1*1));
+// //             if(diff1 == i2){
+// //                 star2 = "*";
+// //             }
+// //             if(i1 = 100 - diff1 - 1){
+// //                 star2 = "O";
+// //             }
+// //             console.log(star2);
+// //     }
+// // }
+    
+// // }
 
-console.log("6----------------------------------------")
-// Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
 
-let title2 = "Breakfast at Tiffany's";
-let title3 = "2001: A Space Odyssey";
-let title4 = "It's a Wonderful Life";
 
-console.log(title1.replace(/[aeiou]/gi, ''));
-console.log(title2.replace(/[aeiou]/gi, ''));
-console.log(title3.replace(/[aeiou]/gi, ''));
-console.log(title4.replace(/[aeiou]/gi, ''));
+// // let width = 100
+// // let height = 100
+// // let ratio = width/height; 
 
-console.log("7----------------------------------------")
-// Stringe, kurį generuoja toks kodas: "Star Wars: Episode "+ " ".repeat( Math.ceil(Math.random() * 10))+(Math.ceil (Math.random() * 7)+1) + " - A New Hope"; Surasti ir atspausdinti epizodo numerį.
+// // for (let row = 0; row < height; row++) {
+// //     let star1 = ""
+// //     for (let col = 0; col < width; col++) {
+// //         let diff = parseInt((row * ratio));
+// //         star1 = "x";
+// //         // if(diff == col ){
+// //         //     star1 = "O";
+// //         // }
+// //         // if(col == 100 - diff - 1){
+// //         //     star1 = "*";
+// //         // }
 
-// let space = (Math.ceil(Math.random() * 10));
-// let episode = (Math.ceil (Math.random() * 7)+1);
-// let epo = "Star Wars: Episode "+ " ".repeat( Math.ceil(Math.random() * 10))+(Math.ceil (Math.random() * 7)+1) + " - A New Hope";
 
+        
+// //         // star1 = (diff == col || col == width - diff - 1 ? 'O' : '*')
+            
+// //         // if(col == width - 1) {
+// //         //     // document.write ('<br>')
+// //         // }
+// //     }
+// //     console.log(star1)
+// // }
+
+// console.log("5----------------------------------------------------------------------------")
+
+// // Metam monetą. Monetos kritimo rezultatą imituojam Math.random() funkcija, kur 0 yra herbas, o 1 - skaičius. Monetos metimo rezultatus išvedame į ekraną atskiroje eilutėje: “S” jeigu iškrito skaičius ir “H” jeigu herbas. Suprogramuokite tris skirtingus scenarijus kai monetos metimą stabdome:
+// // Iškritus herbui;
+// // Tris kartus iškritus herbui;
+// // Tris kartus iš eilės iškritus herbui;
+
+// console.log("sustoja ties herbu.")
+// while (true) {
+//     let coin = Math.round(Math.random());
+
+//     if (coin == 1) {
+//         console.log("S");
+//     }
+//     else {
+//         console.log("H");
+//         break;
+//     }
+
+// }
+
+// console.log("sustoja, kai herbas iškrenta tris kartus.");
+// let countH = 0;
+// while (true) {
+//     let coin2 = Math.round(Math.random());
+
+//     if (coin2 == 1) {
+//         console.log("S");
+//     }
+//     else {
+//         countH++;
+//         console.log("H");
+
+//     }
+//     if (countH == 3) {
+//         break;
+//     }
+
+// }
+
+// console.log("sustoja, kai hearbas iškrenta tris kartus iš eilės.");
+
+// let countTripleH = 0;
+// while (true) {
+//     let coin2 = Math.round(Math.random());
+
+//     if (coin2 == 1) {
+//         console.log("S");
+//         countTripleH = 0;
+//     }
+//     else {
+//         countTripleH++;
+//         console.log("H");
+//         if (countTripleH == 3) {
+//             break;
+    
+//         }
+    
+//     }
+
+
+// }
+
+// console.log("6----------------------------------------------------------------------------")
+
+// // Kazys ir Petras žaidžiai šaškėm. Petras surenka taškų kiekį nuo 10 iki 20, Kazys surenka taškų kiekį nuo 5 iki 25. Vienoje eilutėje išvesti žaidėjų letdus su taškų kiekiu ir “Partiją laimėjo: ​laimėtojo letdas​”. Taškų kiekį generuokite funkcija ​Math.random()​. Žaidimą laimi tas, kas greičiau surenka 222 taškus. Partijas kartoti tol, kol kažkuris žaidėjas pirmas surenka 222 arba daugiau taškų.
+
+
+// let result1 = 0;
+// let result2 = 0;
+
+// while (true) {
+//     let petras = (20 + Math.round(Math.random() * (10 - 20)));
+//     let kazys = (25 + Math.round(Math.random() * (5 - 25)));
+
+//     if (result1 < 222) {
+//         result1 += petras;
+//         // console.log(petras);
+        
+//     }
+//     if (result2 < 222) {
+//         result2 += kazys;
+//         // console.log(kazys);
+//     }
+//     if(result1 >= 222){
+//         console.log("Laimėjo Petras " + result1);
+//         break;
+//     }else if(result2 >= 222){
+//         console.log("Laimėjo Kazys " + result2);
+//         break;
+//     }
+   
+// }
+
+// console.log("7----------------------------------------------------------------------------")
+
+// // Reikia nupaišyti pilnavidurį rombą, taip pat, kaip ir pilnavidurį kvadratą (https://lt.wikipedia.org/wiki/Rombas), kurio aukštis 21 eilutė.
+
+console.log("8----------------------------------------------------------------------------")
+
+//     Sumodeliuokite vinies kalimą. Įkalimo gylį sumodeliuokite pasinaudodami Math.random() funkcija. Vinies ilgis 8.5cm (pilnai sulenda į lentą).
+// “Įkalkite” 5 vinis mažais smūgiais. Vienas smūgis vinį įkala 5-20 mm. Suskaičiuokite kiek reikia smūgių.
+// “Įkalkite” 5 vinis dideliais smūgiais. Vienas smūgis vinį įkala 20-30 mm, bet yra 50% tikimybė (pasinaudokite Math.random() funkcija tikimybei sumodeliuoti), kad smūgis nepataikys į vinį. Suskaičiuokite kiek reikia smūgių.
+let hitCount = 0;
+let hitLenght = 0;
+let allHits = 0;
 
 while(true){
-    let space = (Math.ceil(Math.random() * 10));
-    let episode = (Math.ceil (Math.random() * 7)+1);
-    let epo = "Star Wars: Episode "+ " ".repeat(space) + episode + " - A New Hope";
-    if(episode == 6 && space == 1){
-        console.log(epo);
+// let hitCount = 0;
+// let hitLenght = 0;
+// let allHits = 0;
+    let hit = (20 + Math.round(Math.random() * 15))
+    if(hitLenght <= 85){
+        hitLenght += hit;
+        hitCount++;
+    }else{
+        allHits++;
+        hitLenght = 0;
+    }
+    if(allHits == 5){
+        console.log(hitCount);
+        allHits = 0;
         break;
     }
 }
 
-console.log("8 papildoma----------------------------------------")
-// Suskaičiuoti kiek stringe “Don't Be a Menace to South Central While Drinking Your Juice in the Hood” yra žodžių trumpesnių arba lygių nei 5 raidės. Pakartokite kodą su stringu “Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale”.
+let hitBigCount = 0;
+    let hitBigLenght = 0;
+    let allBigHits = 0;
 
-let sentence1 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood”";
-let sentence2 = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
+while(true){
+    // let hitBigCount = 0;
+    // let hitBigLenght = 0;
+    // let allBigHits = 0;
+    let prob = (Math.round(Math.random() < 0.5));
+    let hit = ((30 + Math.round(Math.random() * 10)) * prob);
+    if(hitBigLenght <= 85){ 
+        hitBigLenght += hit;
+        hitBigCount++;
+    }else{
+        allBigHits ++;
+        hitBigLenght = 0;
+    }
+    if(allBigHits == 5){
+        console.log(hitBigCount);
+        allBigHits = 0;
+        break;
 
-console.log(sentence1.replace(/[a-z]{6,10}/gi, ''));
-console.log(sentence2.replace(/[a-z;ą]{6,10}/gi, ''));
+    }
+}
 
-console.log("9 papildoma----------------------------------------")
-// Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų raidžių. Stringo ilgis 3 simboliai.
+console.log("9 užduotis ------------------------------------------------------------")
+// Sugeneruokite stringą, kurį sudarytų 50 atsitiktinių skaičių nuo 1 iki 200, atskirtų tarpais. Skaičiai turi būti unikalūs (t.y. nesikartoti). Sugeneruokite antrą stringą, pasinaudodami pirmu, palikdami jame tik pirminius skaičius (t.y tokius, kurie dalinasi be liekanos tik iš 1 ir patys savęs). Skaičius stringe sudėliokite didėjimo tvarka, nuo mažiausio iki didžiausio. (reikės split() funkcijos ir masyvų.)
+
+console.log("etiudai ------------------------------------------------------------")
+// 1. Sukurkite ciklą kuris atspausdintų 10 kartų žodį “labas”.
+// 2. Sukurkite ciklą kuris atspausdintų skaičius nuo 0 iki 9.
+// 3. Sukurkite masyvą su dešimt augalų pavadinimų.
+// 4. Atspausdinkite kiekvieną 3čio uždavinio kiekvieną augalą atskiroje eilutėje.
+// 5. Atspausdinkite 3čio uždavinio kiekvieną augalą pradedant nuo paskutinio, ir baigiant pirmuoju. (atvirkščias ciklas).
+// 6. Atspausdinkite kas antrą skaičių nuo 10 iki 50 (pornius);
+// 7. Atspausdinkite kas antrą skaičių nuo 10 iki 50. (pornius) Jei skaičius dalinasi iš 10 be liekanos jo nespausdinkite. ( naudokite continue.) (atspausdinti visus poriius skaičius, išskyrus tuos kurie dalinasi iš 10 be liekanos)
+// 8. Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę;
+// 9. Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai, ir kiek ilgesnių nei 7 simboliai.
 
 
-console.log("10 papildoma----------------------------------------")
-// Parašykite kodą, kuris generuotų atsitiktinį stringą su 10 atsitiktine tvarka išdėliotų žodžių, o žodžius generavimui imtų iš 8-me uždavinyje pateiktų dviejų stringų. Žodžiai neturi kartotis. (reikės masyvo)
+
+
+
+
+
+
+
+
+
