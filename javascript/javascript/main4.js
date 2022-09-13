@@ -1,13 +1,3 @@
-console.log("0 uzduotis");
-// 1. Sukurkite funkciją kuri pakeltų paduotą skaičių n laipsniu, ir gražintų reikšmę (paduodate du parametrus, skaičių ir laipsnį)
-let pow = 0;
-function powerUp(nr, nr2) {
-   return nr ** nr2;
-    
-}
-
-console.log(powerUp(3, 4));
-
 console.log("1 uzduotis lengvesnis");
 // 2. Sukurkite funkciją kuri priimtų du kintamuosius, juos sudaugintų ir atspausdintų sandaugą į konsolę.
 
@@ -108,4 +98,56 @@ exRnd(25, 10);
 console.log("9 uzduotis lengvesnis");
 // Sukurkite HTML div’ą su id “sequence”. Parašykite funkciją kuri sugeneruotų 10 p tagų su skaičiais juose nuo 1 iki 10 ir atiduotų į tą HTML elementą. Rezultate HTML’e turi matytis 10 p tagų su skaičiais iš eilės. Šie TURI BŪTI SUGENERUOTI JAVASCRIPTU.
 
+
+function sek (){
+    let string = " ";
+    for (let i = 0; i < 10; i++) {
+        string += document.getElementById("sequence").innerHTML += "<p>" + i + "</p>";
+    }
+   return string;
+}
+sek();
+
+console.log("0 uzduotis middleground");
+// 1. Sukurkite funkciją kuri pakeltų paduotą skaičių n laipsniu, ir gražintų reikšmę (paduodate du parametrus, skaičių ir laipsnį)
+
+let pow = 0;
+
+function powerUp(nr, nr2) {
+   let powUp = nr**nr2;
+
+    return powUp;
+}
+
+console.log(powerUp(3 , 2.5));
+
+
+console.log("1 uzduotis middleground");
+
+// Sukurkite funkciją kuri priims tris parametrus. skaičių, laipsnį ir HTML elemento id.
+// ši funkcija naudos pirmają funkciją ir jos rezultatą gražins į HTML elementą.
+
+function powUpHTML(a, b){
+    let powUp = a**b;
+
+    return document.getElementById("vidurkis").innerHTML = "<p>" + powUp + "<p>";
+}
+
+powUpHTML(2,4);
+
+console.log("2 uzduotis middleground");
+// Sukurkite funkciją kuri priimtų vieną parametrą, HTML elemento id. Ši funkcija paims prieš tai jau minėtą HTML elementą, iš jo paims skaičių, ir išspausdins visus variantus koks galėjo būti pirminis skaičius kurį kėlėme laipsniu. pvz jei į antrąją funkciją padavėme 2 ir kėlėme 4 laipsniu, ir gavome skaičių 16, tai ši funkcija turėtų išspausdinti, kad pradžioje greičiausiai turėjome skaičių 2 pakeltą 4 laipsniu, arba skaičių 4 pakeltą 2 laipsniu.
+
+
+function posabilities(){
+    let prime = document.getElementById("vidurkis").outerHTML;
+    // let primerPrimer = Math.log(4, prime.match(/\d+/)[0], '')
+    return console.log(prime.match(/\d+/)[0], '');
+// //    let dimer = Math.log(4) / Math.log(primerPrimer)
+
+//     return console.log(primerPrimer);
+
+}
+
+posabilities();
 
