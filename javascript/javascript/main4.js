@@ -7,7 +7,7 @@ function dauginam(a, b) {
     
 }
 
-console.log(dauginam(2, 3));
+// console.log(dauginam(2, 3));
 
 console.log("2 uzduotis lengvesnis");
 
@@ -17,7 +17,7 @@ function labas(a){
     return ("Labas " + a);
 }
 
-console.log(labas("Tadas"));
+// console.log(labas("Tadas"));
 
 console.log("3 uzduotis lengvesnis");
 
@@ -31,10 +31,10 @@ function letters(a){
 function letters2(a){
     return console.log(a.length);
 }
-letters("hello world 1000");
-letters2("hello world 1000");
+// letters("hello world 1000");
+// letters2("hello world 1000");
 
-console.log("4 uzduotis lengvesnis");
+// console.log("4 uzduotis lengvesnis");
 
 // Sukurkite funkciją kuri priimtų 2 kintamuosius tekstus, vardą, pavardę ir atspausdintų inicialus. T.y vardo ir pavardės pirmąsias raides DIDŽIOSIOMIS raidėmis.
 
@@ -49,7 +49,7 @@ function inicialai(a){
     
 }
 
-inicialai("Jonas Jonaitis")
+// inicialai("Jonas Jonaitis")
 
 console.log("5 uzduotis lengvesnis");
 
@@ -74,7 +74,7 @@ function rnd(){
 return console.log(a + " " + b + " " + c)
 }
 
-rnd();
+// rnd();
 
 console.log("8 uzduotis lengvesnis");
 // Parašykite funkciją kuri priimtų du kintamuosius “nuo” ir “iki”. Funkcija turi sugeneruoti random skaičių tame intervale ir jį GRAŽINTI.
@@ -93,7 +93,7 @@ function exRnd(a, b){
     return console.log((high + Math.round(Math.random() * (low - high))));
     
 }
-exRnd(25, 10);
+// exRnd(25, 10);
 
 console.log("9 uzduotis lengvesnis");
 // Sukurkite HTML div’ą su id “sequence”. Parašykite funkciją kuri sugeneruotų 10 p tagų su skaičiais juose nuo 1 iki 10 ir atiduotų į tą HTML elementą. Rezultate HTML’e turi matytis 10 p tagų su skaičiais iš eilės. Šie TURI BŪTI SUGENERUOTI JAVASCRIPTU.
@@ -106,20 +106,24 @@ function sek (){
     }
    return string;
 }
-sek();
+// sek();
 
 console.log("0 uzduotis middleground");
 // 1. Sukurkite funkciją kuri pakeltų paduotą skaičių n laipsniu, ir gražintų reikšmę (paduodate du parametrus, skaičių ir laipsnį)
 
-let pow = 0;
+function powerUp(a, b) {
 
-function powerUp(nr, nr2) {
-   let powUp = nr**nr2;
-
-    return powUp;
+    let c = a;
+    for (let i = 1; i < b; i++) {
+        c *= a;
+        // console.log(c);
+        
+    }
+    return console.log(c);
+    
 }
 
-console.log(powerUp(3 , 2.5));
+powerUp(5, 3);
 
 
 console.log("1 uzduotis middleground");
@@ -128,12 +132,15 @@ console.log("1 uzduotis middleground");
 // ši funkcija naudos pirmają funkciją ir jos rezultatą gražins į HTML elementą.
 
 function powUpHTML(a, b){
-    let powUp = a**b;
+    let c = a;
+    for (let i = 1; i < b; i++) {
+        c *= a; 
+    }
 
-    return document.getElementById("vidurkis").innerHTML = "<p>" + powUp + "<p>";
+    return document.getElementById("vidurkis").innerHTML = "<p>" + c + "<p>";
 }
 
-powUpHTML(2,4);
+powUpHTML(4, 3);
 
 console.log("2 uzduotis middleground");
 // Sukurkite funkciją kuri priimtų vieną parametrą, HTML elemento id. Ši funkcija paims prieš tai jau minėtą HTML elementą, iš jo paims skaičių, ir išspausdins visus variantus koks galėjo būti pirminis skaičius kurį kėlėme laipsniu. pvz jei į antrąją funkciją padavėme 2 ir kėlėme 4 laipsniu, ir gavome skaičių 16, tai ši funkcija turėtų išspausdinti, kad pradžioje greičiausiai turėjome skaičių 2 pakeltą 4 laipsniu, arba skaičių 4 pakeltą 2 laipsniu.
@@ -141,11 +148,27 @@ console.log("2 uzduotis middleground");
 
 function posabilities(){
     let prime = document.getElementById("vidurkis").outerHTML;
-    // let primerPrimer = Math.log(4, prime.match(/\d+/)[0], '')
-    return console.log(prime.match(/\d+/)[0], '');
-// //    let dimer = Math.log(4) / Math.log(primerPrimer)
-
-//     return console.log(primerPrimer);
+    let num = (prime.match(/\d+/)[0]);
+    let resArr = [];
+    for (let i = 1; i < num; i++) {
+        let posRes = i;
+        for (let a = 1; a < num; a++) {
+            posRes *= i;
+            // if(posRes > num){
+            //     break;
+            // }
+            if(posRes == num){
+                resArr.push([i, a+1])
+                if(a == 1){
+                    i = num;
+                }
+                break;
+            }
+            
+        }
+        
+    }
+    return console.log(resArr);
 
 }
 

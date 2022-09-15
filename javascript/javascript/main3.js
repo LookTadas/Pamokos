@@ -74,7 +74,7 @@ for (let i = 0; i < 10; i++) {
 }
 let am = areaMinus1.concat(area10);
 
-console.log(newAreaMinus);
+console.log(am);
 
 // Iš masyvo elementų sukurkite du naujus masyvus. Vienas turi būti sudarytas iš neporinių indekso reikšmių, o kitas iš porinių;
 // Masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;
