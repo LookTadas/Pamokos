@@ -59,7 +59,7 @@ function spausdink(a){
     return document.getElementById("numberPlace").innerHTML = "<p>" + a + "</p>";
 }
 
-spausdink(14);
+// spausdink(14);
 console.log("6 uzduotis lengvesnis");
 // Parašykite funkciją kuri nustatytų kas bus sekantis Lt prezidentas.
 
@@ -123,7 +123,7 @@ function powerUp(a, b) {
     
 }
 
-powerUp(5, 3);
+// powerUp(5, 3);
 
 
 console.log("1 uzduotis middleground");
@@ -144,7 +144,7 @@ powUpHTML(4, 3);
 
 console.log("2 uzduotis middleground");
 // Sukurkite funkciją kuri priimtų vieną parametrą, HTML elemento id. Ši funkcija paims prieš tai jau minėtą HTML elementą, iš jo paims skaičių, ir išspausdins visus variantus koks galėjo būti pirminis skaičius kurį kėlėme laipsniu. pvz jei į antrąją funkciją padavėme 2 ir kėlėme 4 laipsniu, ir gavome skaičių 16, tai ši funkcija turėtų išspausdinti, kad pradžioje greičiausiai turėjome skaičių 2 pakeltą 4 laipsniu, arba skaičių 4 pakeltą 2 laipsniu.
-
+// !!! NEVEIKIA JEIGU IŠJUNGTA 1 UŽDUOTIS !!!
 
 function posabilities(){
     let prime = document.getElementById("vidurkis").outerHTML;
@@ -173,4 +173,86 @@ function posabilities(){
 }
 
 posabilities();
+
+console.log("0 užduotis sunkesni")
+// Parašykite funkciją, kurios argumentas būtų tekstas, kuris yra įterpiamas į h1 tagą;
+
+function print(a){
+    return document.getElementById("text").innerHTML = "<h1>" + a + "<h1>";
+}
+
+print("Niekada nepamiršk.");
+
+console.log("1 užduotis sunkesni")
+// Parašykite funkciją su dviem argumentais, pirmas argumentas tekstas, įterpiamas į h tagą, o antrasis tago numeris (1-6). Rašydami šią funkciją remkitės pirmame uždavinyje parašytą funkciją;
+
+function headLine(a,b){
+    let witchH = ["<h1>", "<h2>", "<h3>", "<h4>", "<h5>", "<h6>"];
+    return document.getElementById("headLine").innerHTML = witchH[a] + b + witchH[a];
+}
+
+headLine(1 , "Pats svarbiausias dalykas - tvarkingas kodas, lygiai taip pat kaip ir tvarkingas stalas.");
+
+console.log("2 užduotis sunkesni")
+// Sugeneruokite atsitiktinį stringą iš raidžių ir skaičių. Visus skaitmenis stringe įdėkite į h1 tagą. Raides palikite. Jegu iš eilės eina keli skaitmenys, juos į tagą reikią dėti kartu (h1 atsidaro prieš pirmą ir užsidaro po paskutinio) Keitimui naudokite pirmo patobulintą (jeigu reikia) uždavinio funkciją.
+
+function makeid(lenght) {
+    let result = [];
+    let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let charactersLength = characters.length;
+    for (let i = 0; i < lenght; i++){
+        result.push(characters.charAt(Math.floor(Math.random() * charactersLength)));
+        console.log(result);
+    }
+    
+    for (let i = 0; i < result.length; i++) {
+        if(result[i] == result[i].match(/[0-9]/)){
+        document.getElementById("randomText").innerHTML  += "<h1>" + result[i] + "<h1>";
+    }
+    
+    }
+}
+    // console.log(makeid(20));
+
+    console.log("3 užduotis sunkesni")
+// Sugeneruokite masyvą iš 100 elementų, kurio reikšmės atsitiktiniai skaičiai nuo 33 iki 77. Išrūšiuokite masyvą pagal daliklių be liekanos kiekį mažėjimo tvarka, panaudodami ketvirto uždavinio funkciją.
+
+randomizerSortorizer(100)
+function randomizerSortorizer(a) {
+    let alfa = [];
+    for (let i = 0; i < a; i++){
+        alfa.push((33 + Math.round(Math.random()*(44))));
+    }
+
+    let omega = [];
+     
+    for (let i = 1; i < alfa[i]; i++) {
+        let area = alfa[i];
+        let posRes = i;
+        for (let a = 1; a < area; a++) {
+            posRes *= i;
+            // if(posRes > num){
+            //     break;
+            // }
+            if(posRes == area){
+                omega[i].push([i, a + 1]);
+                if(a == 1){
+                    omega[i].push(area);
+                }
+                break;
+            }
+            
+        }
+        
+    }
+    console.log(omega);
+        
+    
+    return  console.log(alfa);
+
+}
+
+
+  
+    
 
